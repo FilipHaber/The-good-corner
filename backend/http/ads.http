@@ -1,0 +1,68 @@
+GET http://localhost:3000/ads
+
+###
+
+GET http://localhost:3000/categories?title=au
+
+###
+
+POST http://localhost:3000/ads
+Content-Type: application/json
+
+{
+    "title": "Bike to sell",
+    "description": "Red bikeeeeeeeeee",
+    "owner": "John Doe",
+    "price": 77,
+    "location": "Paris",
+    "picture": "default_image.jpg",
+    "createdAt": "2023-09-05T10:13:14.755Z",
+    "category": "3"
+}
+
+###
+
+DELETE http://localhost:3000/ads/19
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/ads/4
+Content-Type: application/json
+
+{
+      "picture": "vide-poche.webp"
+}
+
+
+////////////
+
+
+###
+
+POST http://localhost:3000/student
+Content-Type: application/json
+
+{
+    "name": "Test21",
+    "firstname": "test21",
+    "birthday": "2099-02-19",
+    "address": "rue"
+}
+
+###
+
+PUT http://localhost:3000/student/2
+Content-Type: application/json
+
+{
+    "name": "Test21000",
+    "firstname": "test21",
+    "birthday": "2099-02-19",
+    "address": "rue"
+}
+
+###
+
+DELETE http://localhost:3000/student/3
+Content-Type: application/json
